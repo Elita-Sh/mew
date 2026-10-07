@@ -1,29 +1,13 @@
-### IntelliJ IDEA ###
+# IntelliJ IDEA
+.idea
+*.iml
+
+#Скомпилированный файлы
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+*.class
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+*.log
+*.tmp
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
-.vscode/
-
-### Mac OS ###
-.DS_Store
+Thumbs.db
+Desktop.ini
