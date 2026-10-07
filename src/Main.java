@@ -14,7 +14,6 @@ public class Main {
             System.out.println("4. Список не зачисленных, но с индивидуальными достижениями");
             System.out.println("5. Упорядочить по убыванию суммы баллов за экзамены");
             System.out.println("6. Выход");
-            System.out.println("Привет чечня");
             System.out.println("Выберите пункт меню (1..6)");
 
             int c = sc.nextInt();
