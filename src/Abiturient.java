@@ -181,6 +181,8 @@ public class Abiturient {
         }
         abiturients = extended;
     }
+
+
     //распкчатка массива
     public static void printAbiturients(){
         System.out.println("\nсписок абитуриентов:");
