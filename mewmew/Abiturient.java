@@ -18,8 +18,7 @@ public class Abiturient {
         abiturients = new Abiturient[]{
                 new Abiturient("Кудухова",85,90,78,5),
                 new Abiturient("Шавлохова",80,78,90,4),
-                new Abiturient("Кокаева",85,78,90,4)
-
+                new Abiturient("Кокаева",85,78,90,4),
         };
     }
     //конструктор с параметрами
