@@ -11,3 +11,9 @@ out/
 
 Thumbs.db
 Desktop.ini
+
+.idea/
+*.iml
+out/
+target/
+build/
