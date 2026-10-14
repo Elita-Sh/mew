@@ -182,13 +182,7 @@ public class Abiturient {
     }
 
 
-    //распкчатка массива
-    public static void printAbiturients(){
-        System.out.println("\nсписок абитуриентов:");
-        for (Abiturient a: abiturients){
-            System.out.println(a);
-        }
-    }
+
     //сортировка массива по убыванию
     public static void sortByExamSumDesc(){
         for (int i = 0; i < abiturients.length - 1; i++)
@@ -199,7 +193,7 @@ public class Abiturient {
                     abiturients[j + 1] = rab;
                 }
         System.out.println("\nСписок абитуриентов, упорядоченный по убыванию суммы баллов за экзамены:");
-        printAbiturients();
+
     }
     // вспомогательный
     private static int abiturients_examSum(int index) {

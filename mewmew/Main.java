@@ -22,7 +22,7 @@ public class Main {
                     Abiturient.fillAbiturients();
                     break;
                 case 2:
-                    Abiturient.printAbiturients();
+                    AbiturienService.printAbiturients();
                     break;
                 case 3:
                     System.out.print("Введите общее количество мест: ");
