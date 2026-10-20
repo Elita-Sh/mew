@@ -19,7 +19,7 @@ public class Main {
             int c = sc.nextInt();
             switch (c) {
                 case 1:
-                    Abiturient.fillAbiturients();
+                    AbiturienService.fillAbiturients();
                     break;
                 case 2:
                     AbiturienService.printAbiturients();
