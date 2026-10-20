@@ -25,4 +25,14 @@ public class AbiturienService {
         }
         abiturients = extended;
     }
+    private static int readInt(Scanner sc) {
+        String line = sc.nextLine();
+        try {
+            return Integer.parseInt(line.trim());
+        } catch (NumberFormatException e) {
+            System.out.println("нужно ввести целое число!");
+            return -1;
+        }
+    }
+
 }

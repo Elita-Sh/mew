@@ -76,15 +76,7 @@ public class Abiturient {
         }
     }
 
-    private static int readInt(Scanner sc) {
-        String line = sc.nextLine();
-        try {
-            return Integer.parseInt(line.trim());
-        } catch (NumberFormatException e) {
-            System.out.println("нужно ввести целое число!");
-            return -1;
-        }
-    }
+
     public String toString(){
         return String.format(
                 "фамилия: %s ==> экзамен1: %d экзамен2: %d экзамен3: %d" +
