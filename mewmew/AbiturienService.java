@@ -110,5 +110,21 @@ public class AbiturienService {
         }
         return null;
     }
+    public static boolean removeByName(String name) {
+        for (int i = 0; i < abiturients.length; i++) {
+            if (abiturients[i].getSurname().equalsIgnoreCase(name)) {
+                Abiturient[] result = new Abiturient[abiturients.length - 1];
+                for (int j = 0, k = 0; j < abiturients.length; j++) {
+                    if (j != i) result[k++] = abiturients[j];
+                }
+                abiturients = result;
+                return true;
+            }
+        }
+        return false;
+    }
+    public static int count() {
+        return abiturients.length;
+    }
 
 }
