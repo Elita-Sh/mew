@@ -19,23 +19,23 @@ public class Main {
             int c = sc.nextInt();
             switch (c) {
                 case 1:
-                    Abiturient.fillAbiturients();
+                    AbiturienService.fillAbiturients();
                     break;
                 case 2:
-                    Abiturient.printAbiturients();
+                    AbiturienService.printAbiturients();
                     break;
                 case 3:
                     System.out.print("Введите общее количество мест: ");
                     int seats = sc.nextInt();
-                    Abiturient.admittedList(seats);
+                    AbiturienService.admittedList(seats);
                     break;
                 case 4:
                     System.out.print("Введите общее количество мест: ");
                     int seats2 = sc.nextInt();
-                    Abiturient.notAdmittedWithAchievements(seats2);
+                    AbiturienService.notAdmittedWithAchievements(seats2);
                     break;
                 case 5:
-                    Abiturient.sortByExamSumDesc();
+                    AbiturienService.sortByExamSumDesc();
                     break;
                 default:
                     break cycle;
