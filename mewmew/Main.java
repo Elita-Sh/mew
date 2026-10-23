@@ -35,7 +35,7 @@ public class Main {
                     Abiturient.notAdmittedWithAchievements(seats2);
                     break;
                 case 5:
-                    Abiturient.sortByExamSumDesc();
+                    AbiturienService.sortByExamSumDesc();
                     break;
                 default:
                     break cycle;

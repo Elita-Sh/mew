@@ -160,22 +160,7 @@ public class Abiturient {
 
 
 
-    //сортировка массива по убыванию
-    public static void sortByExamSumDesc(){
-        for (int i = 0; i < abiturients.length - 1; i++)
-            for (int j = 0; j < abiturients.length - 1 - i; j++)
-                if (abiturients_examSum(j) < abiturients_examSum(j + 1)){
-                    Abiturient rab = abiturients[j];
-                    abiturients[j] = abiturients[j + 1];
-                    abiturients[j + 1] = rab;
-                }
-        System.out.println("\nСписок абитуриентов, упорядоченный по убыванию суммы баллов за экзамены:");
 
-    }
-    // вспомогательный
-    private static int abiturients_examSum(int index) {
-        return abiturients[index].getExamSum();
-    }
 
     // список абитуриентов, зачисленных на 90% мест (по общему баллу)
     public static void admittedList(int totalSeats) {
