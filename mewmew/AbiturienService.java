@@ -102,10 +102,9 @@ public class AbiturienService {
             System.out.println("Таких абитуриентов нет.");
         }
     }
-    public static Abiturient searchByName(String name) {
-        System.out.println("Поиск абитуриента: " + name);
+    public static Abiturient findByName(String name) {
         for (Abiturient a : abiturients) {
-            if (a.getSurname().equals(name)) {
+            if (a.getSurname().equalsIgnoreCase(name)) {
                 return a;
             }
         }
