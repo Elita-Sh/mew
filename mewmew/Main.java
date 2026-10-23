@@ -32,7 +32,7 @@ public class Main {
                 case 4:
                     System.out.print("Введите общее количество мест: ");
                     int seats2 = sc.nextInt();
-                    Abiturient.notAdmittedWithAchievements(seats2);
+                    AbiturienService.notAdmittedWithAchievements(seats2);
                     break;
                 case 5:
                     AbiturienService.sortByExamSumDesc();

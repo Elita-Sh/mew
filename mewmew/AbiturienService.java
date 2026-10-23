@@ -71,5 +71,32 @@ public class AbiturienService {
             System.out.println(sorted[i]);
         }
     }
+    // абитуриенты, не попавшие в список зачисленных, но имеющие
+    // индивидуальные достижения
+    public static void notAdmittedWithAchievements(int totalSeats) {
+        int admittedCount = Math.min((int) Math.round(totalSeats * 0.9), abiturients.length);
+
+        Abiturient[] sorted = abiturients.clone();
+        for (int i = 0; i < sorted.length - 1; i++)
+            for (int j = 0; j < sorted.length - 1 - i; j++)
+                if (sorted[j].getTotalScore() < sorted[j + 1].getTotalScore()) {
+                    Abiturient rab = sorted[j];
+                    sorted[j] = sorted[j + 1];
+                    sorted[j + 1] = rab;
+                }
+
+        System.out.println("\nАбитуриенты, не прошедшие по конкурсу, но имеющие " +
+                "индивидуальные достижения:");
+        boolean found = false;
+        for (int i = admittedCount; i < sorted.length; i++) {
+            if (sorted[i].getAchievements() > 0) {
+                System.out.println(sorted[i]);
+                found = true;
+            }
+        }
+        if (!found) {
+            System.out.println("Таких абитуриентов нет.");
+        }
+    }
 
 }
