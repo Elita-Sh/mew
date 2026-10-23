@@ -115,5 +115,8 @@ public class AbiturienService {
         }
         return false;
     }
+    public static int count() {
+        return abiturients.length;
+    }
 
 }
