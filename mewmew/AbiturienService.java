@@ -1,7 +1,19 @@
 import java.util.Scanner;
 
+
 public class AbiturienService {
-    private static Abiturient[] abiturients;
+    //статическое содержимое класса
+    static Abiturient[] abiturients;
+    public static Scanner sc = new Scanner(System.in, "UTF-8");
+    static{
+
+        abiturients = new Abiturient[]{
+                new Abiturient("Кудухова",85,90,78,5),
+                new Abiturient("Шавлохова",80,78,90,4),
+                new Abiturient("Кокаева",85,78,90,4),
+        };
+    }
+
     //распечатка массива
     public static void printAbiturients(){
         System.out.println("\nсписок абитуриентов:");

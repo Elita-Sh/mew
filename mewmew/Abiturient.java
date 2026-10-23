@@ -10,17 +10,7 @@ public class Abiturient {
     private int exam2;
     private int exam3;
     private int achievements;
-    //статическое содержимое класса
-    private static Abiturient[] abiturients;
-    public static Scanner sc = new Scanner(System.in, "UTF-8");
-    static{
 
-        abiturients = new Abiturient[]{
-                new Abiturient("Кудухова",85,90,78,5),
-                new Abiturient("Шавлохова",80,78,90,4),
-                new Abiturient("Кокаева",85,78,90,4),
-        };
-    }
     //конструктор с параметрами
     public Abiturient(String surname, int exam1, int exam2, int exam3, int achievements){
         this.surname = surname;
@@ -62,7 +52,7 @@ public class Abiturient {
 
         while (true) {
 
-            String value = sc.nextLine().trim();
+            String value = AbiturienService.sc.nextLine().trim();
 
             if (value.isEmpty()) {
                 System.out.print("Заполните строку! Повторите ввод: ");
@@ -176,7 +166,7 @@ public class Abiturient {
 
 
     public static int getSize() {
-        return abiturients.length;
+        return AbiturienService.abiturients.length;
     }
 }
 
