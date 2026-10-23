@@ -27,7 +27,7 @@ public class Main {
                 case 3:
                     System.out.print("Введите общее количество мест: ");
                     int seats = sc.nextInt();
-                    Abiturient.admittedList(seats);
+                    AbiturienService.admittedList(seats);
                     break;
                 case 4:
                     System.out.print("Введите общее количество мест: ");

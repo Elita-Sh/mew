@@ -162,26 +162,7 @@ public class Abiturient {
 
 
 
-    // список абитуриентов, зачисленных на 90% мест (по общему баллу)
-    public static void admittedList(int totalSeats) {
-        int admittedCount = (int) Math.round(totalSeats * 0.9);
-        // сортируем копию массива по убыванию общего балла (экзамены + достижения)
-        Abiturient[] sorted = abiturients.clone();
-        for (int i = 0; i < sorted.length - 1; i++)
-            for (int j = 0; j < sorted.length - 1 - i; j++)
-                if (sorted[j].getTotalScore() < sorted[j + 1].getTotalScore()) {
-                    Abiturient rab = sorted[j];
-                    sorted[j] = sorted[j + 1];
-                    sorted[j + 1] = rab;
-                }
 
-        int limit = Math.min(admittedCount, sorted.length);
-//        System.out.println("\nВсего мест: " + totalSeats  + limit);
-        System.out.println("Список зачисленных абитуриентов на 90% мест:");
-        for (int i = 0; i < limit; i++) {
-            System.out.println(sorted[i]);
-        }
-    }
 
     // абитуриенты, не попавшие в список зачисленных, но имеющие
     // индивидуальные достижения
