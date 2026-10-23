@@ -102,5 +102,13 @@ public class AbiturienService {
             System.out.println("Таких абитуриентов нет.");
         }
     }
+    public static Abiturient findByName(String name) {
+        for (Abiturient a : abiturients) {
+            if (a.getSurname().equalsIgnoreCase(name)) {
+                return a;
+            }
+        }
+        return null;
+    }
 
 }
